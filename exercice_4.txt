@@ -1,7 +1,7 @@
 # Le tri à bulles est considéré comme très lent. Pourquoi ? Peut-on avoir une idée du temps
 # nécessaire à son exécution, estimer son ordre de grandeur ? Détaillez votre réponse
 
-Le tri à bulle implique de parcourir l'intégralité du tableau à chaque itération, même si une partie
+Le tri à bulles implique de parcourir l'intégralité du tableau à chaque itération, même si une partie
 des valeurs peut déjà être triée. Cela implique des opérations inutiles dans beaucoup de situations,
 contrairement à d'autres algorithmes de tri (sélection ou insertion par exemple) qui permettent de ne
 pas lire toutes les valeurs d'un tableau à chaque itération.
