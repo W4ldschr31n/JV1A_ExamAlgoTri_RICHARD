@@ -1,0 +1,18 @@
+# Le tri à bulles est considéré comme très lent. Pourquoi ? Peut-on avoir une idée du temps
+# nécessaire à son exécution, estimer son ordre de grandeur ? Détaillez votre réponse
+
+Le tri à bulle implique de parcourir l'intégralité du tableau à chaque itération, même si une partie
+des valeurs peut déjà être triée. Cela implique des opérations inutiles dans beaucoup de situations,
+contrairement à d'autres algorithmes de tri (sélection ou insertion par exemple) qui permettent de ne
+pas lire toutes les valeurs d'un tableau à chaque itération.
+
+Si on considère n comme étant le nombre d'éléments du tableau, il faut effectuer n itérations (parcours entiers du tableau)
+qui elles-mêmes impliquent potentiellement n opérations de permutation.
+On peut donc estimer que le tri complet peut nécessiter n² opérations de permutation. 
+Si on connait le temps nécessaire (t) pour exécuter une de ces opérations, alors on peut estimer que l'algorithme a une durée de n²*t.
+
+Si on souhaite s'abstraire de la durée de chaque opération, on estimera alors que le tri à bulles a un ordre de grandeur de n².
+
+L'algorithme peut sembler efficace selon notre perception du temps pour des tableaux de petite taille,
+mais chaque élément que l'on ajoute au tableau à trier augmente drastiquement le temps d'exécution.
+Plus le tableau est grand, plus le temps supplémentaire nécessaire pour trier un nouvel élément est grand.
