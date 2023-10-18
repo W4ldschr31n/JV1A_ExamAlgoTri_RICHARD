@@ -5,7 +5,7 @@ print(f"Tableau initial :\n{myTable}")
 # Écrire un programme permettant le parcours du tableau au cours d’une itération du tri à bulles.
 
 # On parcourt le tableau une seule fois
-# On s'arrête à l'avant dernier élément car le dernier élément sera forcément déjà trié dans cette itération
+# On s'arrête à l'avant dernier élément car le dernier élément n'a pas d'élément suivant
 for i in range(len(myTable)-1):
     currentValue = myTable[i]
     nextValue = myTable[i+1]
