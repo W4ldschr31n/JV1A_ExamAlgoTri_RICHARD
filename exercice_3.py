@@ -6,10 +6,10 @@ print(f"Tableau initial :\n{myTable}")
 # un tableau grâce à l’algorithme du tri à bulles.
 
 # On parcourt le tableau autant de fois qu'il y a d'éléments dans le tableau moins 1
-# car si n-1 éléments sont triés à leur place, le dernier élément est forcément trié à sa place aussi
+# car dans le pire des cas on doit déplacer le dernier élément du tableau en première position,
+# ce qui nécessite n-1 permutations (n=nombre d'éléments)
 for i in range(len(myTable)-1):
-    # Pour chaque itération, on s'arrête à l'avant dernier élément car le dernier élément 
-    # sera forcément déjà trié dans cette itération
+    # Pour chaque itération, on s'arrête à l'avant dernier élément car le dernier élément n'a pas d'élément suivant
     for j in range(len(myTable)-1):
         currentValue = myTable[j]
         nextValue = myTable[j+1]
